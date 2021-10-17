@@ -646,7 +646,7 @@ def crack_select():
 		print("\t\x1b[1;31mSelect valid option")
 		print("")
 		crack_select()
-    print("\x1b[1;37m─────────────────────────────────────────────")
+        print("\x1b[1;37m─────────────────────────────────────────────")
 	print("  Total IDs : "+str(len(id)))
 	print("  The Process has started")
 	print("  Brute has been started")
