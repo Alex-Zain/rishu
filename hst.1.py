@@ -529,7 +529,7 @@ def menu():
     os.system("clear")
     print(logo)
     print("")
-    print(" \x1b[1;37m  Welcome ➤ \x1b[1;32m"+name)
+    print(" \x1b[1;37m  Welcome : \x1b[1;32m"+name)
     print("\033[1;37m[\033[1;91m\033[1;47m------------Free mode Cloning-------------\033[0m]\033[1;37m")
     print("")
     print("\x1b[1;37m─────────────────────────────────────────────")
@@ -588,7 +588,7 @@ def crack_select():
 		print("\x1b[1;37m[\033[1;91m\033[1;47m------------AUTO PASS CLONING-------------\033[0m]\033[0;97m")
 		print("")
 		print("─────────────────────────────────────────────")
-		idt = raw_input("  Input id ➤\x1b[1;32m ")
+		idt = raw_input("  Input id :\x1b[1;32m ")
 		print("─────────────────────────────────────────────")
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
@@ -617,7 +617,7 @@ def crack_select():
 		print("")
 		print("[\033[1;91m\033[1;47m------------AUTO PASS CLONING-------------\033[0m]\033[0;97m")
 		print("")
-		idt = raw_input("  Input id ➤ \x1b[1;32m")
+		idt = raw_input("  Input id : \x1b[1;32m")
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			q = json.loads(r.text)
